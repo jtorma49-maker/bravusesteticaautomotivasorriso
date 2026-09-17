@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
   /* ---------- REVEAL AO ROLAR (seções + itens com stagger) ---------- */
   const observerOptions = {
     root: null,
-    rootMargin: '0px 0px -40px 0px',
-    threshold: 0.15
+    rootMargin: '0px 0px -10% 0px',
+    threshold: 0 // dispara assim que qualquer parte entra na tela — evita travar seções longas (muitos cards) no celular
   };
 
   const observer = new IntersectionObserver((entries, obs) => {
